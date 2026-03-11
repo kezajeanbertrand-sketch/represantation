@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IHURIRO SECRETARY PUBLIC LTD</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Roboto',sans-serif;
+}
+
+body{
+background:#fdfdfd;
+color:#333;
+}
+
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 5%;
+background:#6c5ce7;
+color:white;
+z-index: 10;
+text-decoration: none;
+
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#ffeaa7;
+}
+
+/* PRODUCTS */
+
+.products{
+display:flex;
+gap:20px;
+padding:40px;
+background:#f1f2f6;
+overflow-x:auto;
+align-items:flex-start;
+}
+
+.product-card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+flex:0 0 300px;
+}
+
+.product-card:hover{
+transform:translateY(-5px);
+}
+
+.product-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.product-card .info{
+padding:15px;
+}
+
+.product-card h3{
+margin-bottom:10px;
+}
+
+.product-card p{
+font-size:14px;
+color:#555;
+}
+
+/* COMMENTS */
+
+.comment-box{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.comment-box textarea{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.comment-box button{
+width:100px;
+padding:10px;
+border:none;
+background:#6c5ce7;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.comment-item{
+background:white;
+padding:15px;
+margin-top:10px;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.heart-box{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.heart{
+font-size:26px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.heart.liked{
+color:red;
+}
+
+footer{
+background:#6c5ce7;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h2>IHURIRO SECRETARY PUBLIC LTD</h2>
+
+<ul class="nav-links">
+<li><a href="home.html">Home</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="location.html">Location</a></li>
+</ul>
+
+
+</header>
+
+
+<section class="products">
+
+<div class="product-card">
+<img src="Screenshot 2026-03-06 005836.png">
+<div class="info">
+<h3>EPIC Calculator</h3>
+<p>Smart solar powered calculator perfect for office and school use.</p>
+<div class="heart-box">
+  <span class="heart" onclick="toggleHeart(this)">♡</span>
+  <span class="like-count">0</span>
+</div>
+<h2>Comments</h2>
+
+<div class="comment-box">
+<textarea id="comment-input" rows="3" placeholder="Write your comment"></textarea>
+<button onclick="addComment()">Post</button>
+</div>
+
+<div id="comment-list"></div>
+</div>
+</div>
+
+<div class="product-card">
+<img src="Screenshot 2026-03-06 005611.png">
+<div class="info">
+<h3>Epson L805 Printer</h3>
+<p>High quality wireless printer for photos and documents.</p>
+<div class="heart-box">
+  <span class="heart" onclick="toggleHeart(this)">♡</span>
+  <span class="like-count">0</span>
+</div>
+<h2>Comments</h2>
+
+<div class="comment-box">
+<textarea id="comment-input" rows="3" placeholder="Write your comment"></textarea>
+<button onclick="addComment()">Post</button>
+</div>
+
+<div id="comment-list"></div>
+</div>
+</div>
+
+<div class="product-card">
+<img src="Screenshot 2026-03-06 011209.png">
+<div class="info">
+<h3>Scientific Calculator</h3>
+<p>417 functions for high school and university students.</p>
+<div class="heart-box">
+  <span class="heart" onclick="toggleHeart(this)">♡</span>
+  <span class="like-count">0</span>
+</div>
+<h2>Comments</h2>
+
+<div class="comment-box">
+<textarea id="comment-input" rows="3" placeholder="Write your comment"></textarea>
+<button onclick="addComment()">Post</button>
+</div>
+
+<div id="comment-list"></div>
+</div>
+</div>
+
+<div class="product-card">
+<img src="Screenshot 2026-03-06 005634.png">
+<div class="info">
+<h3>EPSON V890 Printer</h3>
+<p>Perfect Printer for drawings and sketches.</p>
+<div class="heart-box">
+  <span class="heart" onclick="toggleHeart(this)">♡</span>
+  <span class="like-count">0</span>
+</div>
+<h2>Comments</h2>
+
+<div class="comment-box">
+<textarea id="comment-input" rows="3" placeholder="Write your comment"></textarea>
+<button onclick="addComment()">Post</button>
+</div>
+
+<div id="comment-list"></div>
+</div>
+</div>
+
+</section>
+
+
+
+<footer>
+© 2026 IHURIRO SECRETARY PUBLIC LTD
+</footer>
+
+
+<script>
+
+const commentList = document.getElementById("comment-list");
+
+function addComment(){
+
+const input = document.getElementById("comment-input");
+
+if(input.value.trim()=="") return;
+
+const comment = document.createElement("div");
+comment.className="comment-item";
+
+comment.innerHTML=`
+
+<span>${input.value}</span>
+
+<div class="likes">
+
+<button onclick="like(this)">👍</button>
+<span class="like-count">0</span>
+
+<button onclick="dislike(this)">👎</button>
+<span class="dislike-count">0</span>
+
+</div>
+
+`;
+
+commentList.prepend(comment);
+
+input.value="";
+
+}
+
+function like(btn){
+
+let count = btn.nextElementSibling;
+
+count.textContent = parseInt(count.textContent)+1;
+
+}
+
+function dislike(btn){
+
+let count = btn.nextElementSibling;
+
+count.textContent = parseInt(count.textContent)+1;
+
+}
+
+
+function toggleHeart(heart){
+
+let count = heart.nextElementSibling;
+
+let number = parseInt(count.textContent);
+
+if(heart.classList.contains("liked")){
+
+heart.classList.remove("liked");
+heart.textContent = "♡";
+count.textContent = number - 1;
+
+}else{
+
+heart.classList.add("liked");
+heart.textContent = "❤️";
+count.textContent = number + 1;
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

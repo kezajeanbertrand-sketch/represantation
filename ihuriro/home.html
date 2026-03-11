@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihuriro Secretary Public Ltd</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>IHURIRO SECRETARY PUBLIC LTD</h1>
+            
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="mu .html">New product</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="book-btn">LOG IN</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+             <h1>URAKAZA NEZA KU IHURIRO SECRETARY PUBLIC LTD SERVECES ZINOZE</h1>
+            <P>KANDI KUGICIRO KITO KANDI KINOGEYE BURI WESE!!!!!!!</P>
+          
+        </div>
+    
+  
+        
+</section>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <h3>Lame de Papier</h3>
+                <img src="pp.jpg" alt="Book">
+                <div class="actions">
+                    <button class="like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
+                <input type="text" placeholder="Write a comment..." class="comment-box">
+            </div>
+            <div class="slide">
+                <h3>Packeging bag</h3>
+                <img src="ccc.jpg" alt="Book">
+                <div class="actions">
+                    <button class="like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
+                <input type="text" placeholder="Write a comment..." class="comment-box">
+            </div>
+            <div class="slide">
+                <h3>Calcurator</h3>
+                <img src="cal.jpg" alt="Book">
+                <div class="actions">
+                    <button class="like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
+                <input type="text" placeholder="Write a comment..." class="comment-box">
+            </div>
+        </div>
+    </div>
+   <div class="prg-wrapper">
+    <div class="prg-image">
+      <img src="uu.png" alt="Ihuriro">
+    </div>
+    <div class="prg">
+      <dt>IHURIRO</dt>
+    <d>Murakaza neza kuri Ihuriro Public Secretary Ltd, urubuga rugamije gutanga serivisi zinoze kandi zizewe mu bijyanye na papeterie,
+         imirimo yo mu biro, n’ubufasha bw’abanyamabanga ku bantu ku giti cyabo, ibigo byigenga, ndetse n’inzego za leta. Intego yacu ni ugufasha abakiriya kubona ibikoresho
+        
+     by’ibanze byo mu biro n’ubufasha bwa tekiniki mu buryo bwihuse, bwizewe kandi ku giciro cyiza.</d>
+
+
+
+     <dt></dt>
+     <d>Ku rubuga rwacu, abakiriya bashobora kubona amakuru arambuye ku bijyanye na serivisi dutanga. Muri zo harimo serivisi zo gucapa inyandiko zitandukanye, gutunganya inyandiko ku ikoranabuhanga rya mudasobwa, gukora kopi z’inyandiko, gusikana (scan) inyandiko, kohereza no kwakira emails, ndetse no gufasha abantu kuzuza inyandiko zisabwa mu nzego zitandukanye. Ibi byose bikorwa
+         n’abakozi bacu bafite ubumenyi n’uburambe mu kazi k’ubunyamabanga n’ikorwa ry’inyandiko.</d>
+    </div>
+
+   </div>
+
+
+ <footer class="rmo-footer">
+  <div class="footer-container">
+    
+    <div class="footer-column branding">
+      <div class="logo-area">
+        <img src="LOG.png" alt="RMO Logo" class="footer-logo">
+        <h2 class="footer-title">IHURIRO SECRETARY PUBLIC LTD</h2>
+      </div>
+      <p class="footer-description">
+        ❤️ihuriro sectetary publick ltd service inoze kugiciro kinogeye buri wese❤️💕
+      </p>
+      
+     
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">our Services</a></li>
+        <li><a href="mu .html">new product</a></li>
+        <li><a href="location.html">location</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <ul class="contact-info">
+        <li><i class="far fa-envelope"></i> </li>
+        <li><i class="fas fa-phone"></i> +250782536786</li>
+        <li><i class="fas fa-map-marker-alt"></i> Ruhango,Gitwe center</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <hr>
+    <p>NIYOYITA Canisius</p>
+    <p>❤️ihuriro sectetary publick ltd service inoze kugiciro kinogeye buri wese❤️💕</p>
+  </div>
+</footer>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.display = i === index ? 'block' : 'none';
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  showSlide(currentSlide);
+}
+
+// Initialize
+showSlide(currentSlide);
+
+// Auto-slide every 5 seconds
+setInterval(nextSlide, 5000);
+
+
+</script>
+
+</body>
+</html>
