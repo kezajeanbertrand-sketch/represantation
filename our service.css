@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="our service.css">
+</head>
+<body>
+    <h1>Papeterie Shop</h1>
+  <div class="menu"> 
+    <a href="#" class="active">Home</a> 
+    <a href="#">Our service</a>                       <a href="#">Location</a> 
+    <a href="#">New product</a> 
+  </div>
+  <p1> THIS IS OUR SERVICE WE PROVIDE</p1>
+  <div class="services">
+    <p>Our Services – Papeterie Shop</p>
+    <p>At our Papeterie Shop, we provide a wide range of stationery and office supplies to support students, teachers, and professionals. Our services include selling quality school materials such as notebooks, pens, pencils, files, and printing papers. We also offer printing, photocopying, scanning, and document binding services to help customers prepare their work quickly and professionally. In addition, we provide affordable prices and friendly customer support to make sure everyone finds the materials they need for school, office work, or personal use. Our goal is to make learning and working easier by supplying reliable stationery products in one convenient place. ✏️📚</p>
+  </div>
+
+  <!-- image gallery for papeterie tools -->
+  <section class="tools">
+    <h2>Our Tools</h2>
+    <div class="tool-gallery">
+      <img src="paper1.png" alt="Paper 1" />
+      <img src="paper2.png" alt="Paper 2" />
+      <img src="papeterie.png" alt="Papeterie" />
+      <img src="Screenshot 2026-03-10 070122.png" alt="Screenshot 1" />
+      <img src="Screenshot 2026-03-10 070356.png" alt="Screenshot 2" />
+      <img src="Screenshot 2026-03-10 070452.png" alt="Screenshot 3" />
+      <img src="Screenshot 2026-03-10 073401.png" alt="Screenshot 6" />
+      <img src="Stationery and office supplies collection (1).png" alt="Stationery Collection" />
+      <img src="chri.png" alt="Chri" />
+      <img src="kiren.png" alt="Kiren" />
+      <img src="paccccct.png" alt="Paccccct" />
+      <img src="Screenshot 2026-03-10 075708.png" alt="Screenshot 7" />
+      <img src="Screenshot 2026-03-10 075739.png" alt="Screenshot 8" />
+      <img src="we.png" alt="We" />
+    </div>
+  </section>
+</body>
+</html>

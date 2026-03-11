@@ -1,0 +1,76 @@
+/* Full-page background with animation */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/mnt/data/67f2a78d-464c-40e1-b80c-79c93ba9c9e1.png') no-repeat center center/cover;
+  overflow: hidden;
+  animation: backgroundMove 20s infinite linear;
+}
+
+/* Subtle background animation */
+@keyframes backgroundMove {
+  0% { background-position: center top; }
+  50% { background-position: center bottom; }
+  100% { background-position: center top; }
+}
+
+/* Login box styling */
+.login-container {
+  width: 350px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(10px); /* gives glassy effect */
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.login-container input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.login-container button {
+  width: 95%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition:  0.3s;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+
+.signup-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
